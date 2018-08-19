@@ -1,0 +1,24 @@
+{
+  "name": "cypress-root",
+  "version": "1.0.0",
+  "description": "a small example e2e testing of root project in cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whrrmydragons/cypress-root.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whrrmydragons/cypress-root/issues"
+  },
+  "homepage": "https://github.com/whrrmydragons/cypress-root#readme",
+  "devDependencies": {
+    "cypress": "^3.1.0",
+    "faker": "^4.1.0"
+  }
+}
