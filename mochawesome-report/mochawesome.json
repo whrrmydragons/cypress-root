@@ -1,0 +1,78 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2018-08-22T05:58:52.154Z",
+    "end": "2018-08-22T05:58:57.795Z",
+    "duration": 5641,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "5ec94a16-03b0-42f1-9163-f23ccce8cfdb",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "529da4b0-bb7d-42d5-b4a3-6bc96fd966de",
+        "title": "Create User",
+        "fullFile": "",
+        "file": "",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "register",
+            "fullTitle": "Create User register",
+            "duration": 4415,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "cy.visit('http://localhost:3002');\ncy.get('.or-register > .ng-binding').click(); // go to register form\ncy.wait(1000);\nvar name = cy.get(':nth-child(2) > .form-control');\nname.type(faker.name.title(), {\n  force: true\n});\nvar email = cy.get(':nth-child(3) > .form-control');\nemail.type(faker.internet.email());\nvar username = cy.get(':nth-child(4) > .form-control');\nusername.type(faker.internet.userName());\nvar password = cy.get(':nth-child(5) > .form-control');\npassword.type('password');\nvar confirmation = cy.get(':nth-child(6) > .form-control');\nconfirmation.type('password');\ncy.get('.btn').click(); // register",
+            "err": {},
+            "isRoot": false,
+            "uuid": "daea73ed-f25d-47c6-898c-b1cec79e152d",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "daea73ed-f25d-47c6-898c-b1cec79e152d"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 4415,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2018
+}
